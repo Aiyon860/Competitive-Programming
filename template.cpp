@@ -22,7 +22,7 @@
 #define mp(a,b) make_pair(a, b)
 #define N 1000005
 #define xyz 1000005
-#define debug(x) cout << #x << " => " << x << "\n";
+#define debug(x) cout << #x << " => " << x << "\n"
 #define tc int t; cin >> t; while(t--) {solve();}
 #define slv solve();
 #define ordered_multiset tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update>
@@ -75,14 +75,13 @@ ull modInverse(ull n) {return power(n,MOD-2);}
 ull nCrModPFermat(ull n,int r) {if(n<r)return 0;if(r==0)return 1;return (fac[n]*modin[r]%MOD*modin[n-r]%MOD)%MOD;}
 void generateFac() {fac[0]=1;modin[0]=modInverse(1);for(int i=1;i<=xyz;i++){fac[i]=(fac[i-1]*i)%MOD;modin[i]=modInverse(fac[i]);}}
 void callPrime() {for(int i=2;i<=1000000;i++){if(!isPrime[i]){int j=i*i;while(j<=1000000){isPrime[j]=true;j+=i;}}}isPrime.flip();isPrime[1]=false;}
-
 void solve() {
+  
   return;
 }
-
 int32_t main() {
-  iyon
-  // tc 
+  iyon;
+  // tc
   // slv
   return 0;
 }
